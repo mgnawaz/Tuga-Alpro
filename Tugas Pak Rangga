@@ -1,0 +1,36 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+    // Deklarasi variabel
+    int jumlahBarang;
+    double hargaBarang, totalBelanja, uangBayar, kembalian;
+
+    // Input jumlah dan harga barang
+    cout << "Masukkan jumlah barang: ";
+    cin >> jumlahBarang;
+
+    cout << "Masukkan harga barang per unit: ";
+    cin >> hargaBarang;
+
+    // Menghitung total belanja
+    totalBelanja = jumlahBarang * hargaBarang;
+
+    // Output total belanja
+    cout << fixed << setprecision(2);
+    cout << "Total belanja: Rp " << totalBelanja << endl;
+
+    // Input uang pembayaran
+    cout << "Masukkan jumlah uang pembayaran: Rp ";
+    cin >> uangBayar;
+
+    // Menghitung kembalian
+    kembalian = uangBayar - totalBelanja;
+
+    // Output kembalian
+    cout << "Kembalian: Rp " << kembalian << endl;
+
+    return 0;
+}
